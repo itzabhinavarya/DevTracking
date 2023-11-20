@@ -9,6 +9,7 @@ const Homepage = () => {
   const [inputSearch, setInputSearch] = useState("");
   const [user, setUser] = useState("");
   const [gitHubUser, setGithubUser] = useState([]);
+  const [userStatus, setUserStatus] = useState(false);
 
   useEffect(() => {
     if (user) {
@@ -16,10 +17,14 @@ const Homepage = () => {
         .get(`https://api.github.com/users/${user}`)
         .then((res) => {
           setGithubUser(res.data);
+          setUserStatus(false);
         })
         .catch(() => {
+          setUserStatus(true);
           console.log("Some error occured");
         });
+    } else {
+      console.log("user not exist");
     }
   }, [user]);
 
@@ -37,7 +42,9 @@ const Homepage = () => {
       <div className="">
         <div className="pt-2">
           <div className="flex justify-center py-5">
-            <h2 className="text-3xl font-bold">DevFinder</h2>
+            <h2 className="text-3xl font-bold">
+              Dev <span className="text-green-500">Finder</span>
+            </h2>
           </div>
           <div className="flex justify-center items-center gap-3">
             <input
@@ -60,7 +67,7 @@ const Homepage = () => {
             </button>
           </div>
         </div>
-        {user &&(
+        {user && !userStatus && (
           <div className="flex justify-center mt-6">
             <div className="bg-white-500 shadow-md flex rounded-lg w-3/5">
               <div className="flex justify-center items-center p-5 border border-l-0 border-t-0 border-b-0 border-r-stone-400 ">
@@ -73,9 +80,7 @@ const Homepage = () => {
               <div className="p-5 w-full">
                 <div className="flex items-center justify-between">
                   <h2 className="font-semibold text-xl">{gitHubUser.name}</h2>
-                  <p className="text-gray-400">
-                    Joined {JoinedDate}
-                  </p>
+                  <p className="text-gray-400">Joined {JoinedDate}</p>
                 </div>
                 <div className="flex justify-between items-center py-4">
                   <h2 className="font-semibold">
@@ -108,6 +113,13 @@ const Homepage = () => {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+        )}
+        {userStatus && (
+          <div className="mt-10 flex">
+            <div className="m-auto px-20 py-2 bg-green-400 rounded-lg">
+              <p className="font-bold">Oopss...User Not Found!</p>
             </div>
           </div>
         )}
