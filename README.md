@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# DevFinder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**DevFinder is a powerful tool designed to streamline your GitHub user discovery experience!**
 
-## Available Scripts
+## Tech Stacks Used
+  **React.js
+  TailwindCss
+  Github Api**
 
-In the project directory, you can run:
+## Project Glimps
 
-### `npm start`
+<img width="960" alt="image" src="https://github.com/itzabhinavarya/DevFinder/assets/95561280/756ad00f-4b64-4c93-b83c-e43b90fae672">
+<img width="960" alt="image" src="https://github.com/itzabhinavarya/DevFinder/assets/95561280/81237c16-ee8b-423d-9b03-7e923429752b">
+<img width="960" alt="image" src="https://github.com/itzabhinavarya/DevFinder/assets/95561280/de7d0106-ee9a-4445-b8d3-3b760ff28170">
 
-Runs the app in the development mode.\
+## Setup
+
+Follow these steps to set up and run DevFinder locally:
+
+### Step 1: Install Dependencies
+
+npm install
+
+### Step 2: Run the project
+
+npm run start
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+--------------------------------------------------------
+**How to Contribute**
 
-### `npm test`
+DevFinder is an open-source project, and we welcome contributions from developers worldwide. To contribute, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Fork the Repository: Click the "Fork" button at the top right of the repository page to create your copy.
 
-### `npm run build`
+Clone Your Fork: Clone the repository to your local machine using the following command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git clone https://github.com/your-username/DevFinder.git
+Make Changes: Make your enhancements or fixes and test thoroughly.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a Pull Request: Submit a pull request, explaining your changes and improvements.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Let's build DevFinder together! 🚀
 
-### `npm run eject`
+Release Information
+Version: v1.0
+Release Date: 09-Dec-2023
+For any issues, feedback, or suggestions, please open an issue on our GitHub repository.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy coding! 🌟
