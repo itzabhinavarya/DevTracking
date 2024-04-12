@@ -9,9 +9,11 @@
 
 ## Project Glimps
 
-<img width="960" alt="image" src="https://github.com/itzabhinavarya/DevFinder/assets/95561280/756ad00f-4b64-4c93-b83c-e43b90fae672">
-<img width="960" alt="image" src="https://github.com/itzabhinavarya/DevFinder/assets/95561280/81237c16-ee8b-423d-9b03-7e923429752b">
-<img width="960" alt="image" src="https://github.com/itzabhinavarya/DevFinder/assets/95561280/de7d0106-ee9a-4445-b8d3-3b760ff28170">
+<img width="960" alt="image" src="https://github.com/itzabhinavarya/DevFinder/assets/95561280/e7e496a9-79cd-4f34-8a3d-ed0c66b0ccee">
+<img width="960" alt="image" src="https://github.com/itzabhinavarya/DevFinder/assets/95561280/641598e2-ea32-472f-9d83-9739a63202de">
+<img width="960" alt="image" src="https://github.com/itzabhinavarya/DevFinder/assets/95561280/8ce7f6af-e2cd-4813-87df-a1a5413a8130">
+
+
 
 ## Setup
 
