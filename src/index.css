@@ -10,11 +10,17 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("./assets/bg.jpg") no-repeat center;
+  background-size: cover;
 }
 
 code {
-  font-family: "poppins",source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "poppins", source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+}
+
+.App{
+  height: 100vh;
 }
 
 .footer {
