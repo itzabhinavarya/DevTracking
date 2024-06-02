@@ -11,7 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url("./assets/bg.jpg") no-repeat center;
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 code {
@@ -19,9 +19,9 @@ code {
     "Courier New", monospace;
 }
 
-.App{
+/* .App{
   height: 100vh;
-}
+} */
 
 .footer {
   transform: translate(-50%, 50%);

@@ -4,15 +4,21 @@ import { FaXTwitter } from "react-icons/fa6";
 import { BsGlobe2 } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 import axios from "axios";
+import AllRepo from "./AllRepo";
+import { Link } from "react-router-dom";
+import { UserContext, useUser } from "../context/UserContext";
 
 const Homepage = () => {
   const [inputSearch, setInputSearch] = useState("");
   const [user, setUser] = useState("");
   const [gitHubUser, setGithubUser] = useState([]);
   const [userStatus, setUserStatus] = useState(false);
+  const [showAllRepo, setShowAllRepo] = useState(false)
+  const { setUserName } = useUser()
 
   useEffect(() => {
     if (user) {
+      setUserName(user)
       axios
         .get(`https://api.github.com/users/${user}`)
         .then((res) => {
@@ -36,6 +42,10 @@ const Homepage = () => {
     })
     .split(" ")
     .join(" ");
+
+  const handleShowAllRepo = () => {
+    setShowAllRepo(!showAllRepo)
+  }
 
   return (
     <>
@@ -83,9 +93,11 @@ const Homepage = () => {
                   <p className="text-gray-400">Joined {JoinedDate}</p>
                 </div>
                 <div className="flex justify-between items-center py-4">
-                  <h2 className="font-semibold">
-                    Repo : {gitHubUser.public_repos}
-                  </h2>
+                  <Link to='/allrepo'>
+                    <h2 className="font-semibold cursor-pointer" onClick={handleShowAllRepo}>
+                      Repo : {gitHubUser.public_repos}
+                    </h2>
+                  </Link>
                   <h2 className="font-semibold">
                     Follower : {gitHubUser.followers}
                   </h2>
@@ -123,6 +135,9 @@ const Homepage = () => {
             </div>
           </div>
         )}
+        {/* {showAllRepo && (
+          <AllRepo userName={user} />
+        )} */}
       </div>
     </>
   );
