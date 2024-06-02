@@ -10,7 +10,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/allrepo" element={<AllRepo />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

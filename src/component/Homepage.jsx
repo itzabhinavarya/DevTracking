@@ -4,9 +4,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { BsGlobe2 } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 import axios from "axios";
-import AllRepo from "./AllRepo";
 import { Link } from "react-router-dom";
-import { UserContext, useUser } from "../context/UserContext";
+import { useUser } from "../context/UserContext";
 
 const Homepage = () => {
   const [inputSearch, setInputSearch] = useState("");
@@ -32,7 +31,7 @@ const Homepage = () => {
     } else {
       console.log("user not exist");
     }
-  }, [user]);
+  }, [user, setUserName]);
 
   var JoinedDate = new Date(gitHubUser.created_at)
     .toLocaleDateString("en-GB", {

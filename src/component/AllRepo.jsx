@@ -1,8 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useUser } from '../context/UserContext'
-import { Link } from 'react-router-dom'
-import DataTable from 'react-data-table-component';
 const AllRepo = () => {
     const [allRepo, setAllRepo] = useState()
     const { userName } = useUser()
@@ -14,42 +12,6 @@ const AllRepo = () => {
         fetchAllRepo()
     }, [userName])
 
-    const columns = [
-        {
-            name: 'Name',
-            selector: row => row.name,
-            width: "200px"
-        },
-        {
-            name: 'Description',
-            selector: row => row.description,
-            // width: "200px"
-        },
-        {
-            name: 'Action',
-            selector: row => row.name,
-        },
-    ];
-
-    const customStyles = {
-        rows: {
-            style: {
-                minHeight: '72px', // override the row height
-            },
-        },
-        headCells: {
-            style: {
-                paddingLeft: '8px', // override the cell padding for head cells
-                paddingRight: '8px',
-            },
-        },
-        cells: {
-            style: {
-                paddingLeft: '8px', // override the cell padding for data cells
-                paddingRight: '8px',
-            },
-        },
-    };
     return (
         <>
             <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -91,7 +53,7 @@ const AllRepo = () => {
                                 ))}
                             </div>
                         </div>
-                        <a href={value.html_url} target='_BLANK' className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <a href={value.html_url} target='_BLANK'  rel="noreferrer" className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             View on Github
                             <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
