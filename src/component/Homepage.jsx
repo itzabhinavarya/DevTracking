@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { BsGlobe2 } from "react-icons/bs";
