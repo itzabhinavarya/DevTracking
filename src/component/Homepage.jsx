@@ -51,7 +51,7 @@ const Homepage = () => {
         <div className="pt-2">
           <div className="flex justify-center py-5">
             <h2 className="text-3xl font-bold">
-              Dev <span className="text-green-500">Finder</span>
+              Dev <span className="text-green-500">Tracking</span>
             </h2>
           </div>
           <div className="flex justify-center items-center gap-3">
