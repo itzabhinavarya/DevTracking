@@ -1,6 +1,6 @@
-# DevFinder
+# DevTracking
 
-**DevFinder is a powerful tool designed to streamline your GitHub user discovery experience!**
+**DevTracking is a powerful tool designed to streamline your GitHub user discovery experience!**
 
 ## Tech Stacks Used
   **React.js
@@ -17,7 +17,7 @@
 
 ## Setup
 
-Follow these steps to set up and run DevFinder locally:
+Follow these steps to set up and run DevTracking locally:
 
 ### Step 1: Install Dependencies
 
@@ -31,7 +31,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 --------------------------------------------------------
 **How to Contribute**
 
-DevFinder is an open-source project, and we welcome contributions from developers worldwide. To contribute, follow these steps:
+DevTracking is an open-source project, and we welcome contributions from developers worldwide. To contribute, follow these steps:
 
 Fork the Repository: Click the "Fork" button at the top right of the repository page to create your copy.
 
