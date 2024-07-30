@@ -1,5 +1,5 @@
 pipeline {
-    agent any  // This tells Jenkins to run on any available agent
+    agent any
     stages {
         stage('Checkout') {
             steps {
@@ -8,12 +8,20 @@ pipeline {
         }
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                script {
+                    docker.image('node:16-alpine').inside {
+                        sh 'npm install'
+                    }
+                }
             }
         }
         stage('Build') {
             steps {
-                sh 'npm run build'
+                script {
+                    docker.image('node:16-alpine').inside {
+                        sh 'npm run build'
+                    }
+                }
             }
         }
     }
