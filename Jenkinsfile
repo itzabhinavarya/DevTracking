@@ -1,4 +1,5 @@
 pipeline {
+    agent any  // This tells Jenkins to run on any available agent
     stages {
         stage('Checkout') {
             steps {
