@@ -6,6 +6,7 @@ import AllRepo from "./component/AllRepo";
 function App() {
   return (
     <div className="App">
+    // Routes
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/allrepo" element={<AllRepo />} />
