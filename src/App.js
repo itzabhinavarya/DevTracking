@@ -7,7 +7,6 @@ function App() {
   return (
     <div className="App">
       <Routes>
-    {/* Test */}
         <Route path="/" element={<Homepage />} />
         <Route path="/allrepo" element={<AllRepo />} />
       </Routes>
